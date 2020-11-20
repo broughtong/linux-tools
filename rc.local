@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#if rc.local doesnt exist, just creating it works in ubuntu - with a chmod
+#cp ./rc.local /etc/rc.local
+
+#create a tmux session as myself
+sudo -i -u george tmux new-session -d -s boot-session
+#tmux new-window -d -n 'nameofWindow' -t sess1:1 'sudo /home/pi/bin/script.py'
+
+exit 0
