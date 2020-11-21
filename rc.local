@@ -4,7 +4,6 @@
 #cp ./rc.local /etc/rc.local
 
 #create a tmux session as myself
-sudo -i -u george tmux new-session -d -s boot-session
-#tmux new-window -d -n 'nameofWindow' -t sess1:1 'sudo /home/pi/bin/script.py'
+sudo -i -H -u george tmux new-session -d -s boot-session
 
 exit 0
